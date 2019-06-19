@@ -1,7 +1,7 @@
 #
-# Copyright(C) 2014 Pedro H. Penna <pedrohenriquepenna@gmail.com>
+# Copyright(C) 2016 Matheus A. Souza <matheusalcantarasouza@gmail.com>
 #
-# Builds CAP Benchmark suite for x86 architecture.
+# Builds CAP Benchmark suite for x86 Gem5 architecture.
 #
 
 # Directories.
@@ -16,7 +16,7 @@ export CC = gcc
 export AR = ar
 
 # Tool chain configuration.
-export CFLAGS = -Wall -Wextra -Werror -O3
+export CFLAGS = -O3 -static
 export CFLAGS += -I $(INCDIR)
 export ARFLAGS = -vq
 
